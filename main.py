@@ -1,8 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder='app/static/', template_folder='app/templates')
-app.static_folder = 'app/static'
+app = Flask(__name__)
 
 # Enable CORS for all origins
 CORS(app, resources={r"/*": {"origins": "*"}})
